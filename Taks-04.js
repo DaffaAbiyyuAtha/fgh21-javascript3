@@ -1,11 +1,3 @@
-// async function getData() {
-//   let response = await fetch("https://jsonplaceholder.typicode.com/users");
-//   let data = await response.json();
-//   console.log(data);
-//   console.log(response.name);
-// }
-// getData();
-
 const getName = () => {
   fetch("https://jsonplaceholder.typicode.com/users")
     .then((response) => response.json())
