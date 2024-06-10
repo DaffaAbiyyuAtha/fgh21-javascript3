@@ -17,12 +17,12 @@ const ticket = (day) => {
   });
 };
 
-ticket("senin")
+ticket("sabtu")
   .then((result) => {
-    console.log("hari ini adalah hari", result, "maka harganya Rp." + harga);
+    console.log("hari ini adalah hari", result, "maka harganya Rp. " + harga);
   })
   .catch((error) => {
-    console.log(error + (harga - (harga * 10) / 100));
+    console.log(error.message + (harga - (harga * 10) / 100));
   });
 
 //2.
@@ -45,10 +45,10 @@ const cekMakananSehat = function (makanan) {
   });
 };
 
-cekMakananSehat("sayur")
+cekMakananSehat("daging")
   .then((result) => {
     console.log(result);
   })
   .catch((error) => {
-    console.log(error);
+    console.log(error.message);
   });

@@ -29,7 +29,7 @@ const fullMonth = (error, months) => {
     months.map((month) => console.log(month)); // Membaca keseluruhan dan mengambil months dengan isi month maka lakukanlah perintah menampilkan month
   } else {
     // Jika tidak
-    console.log(error); // Tampilankan nilai dari error
+    console.log(error.message); // Tampilankan nilai dari error
   }
 };
 

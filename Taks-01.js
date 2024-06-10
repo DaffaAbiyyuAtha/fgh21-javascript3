@@ -20,9 +20,9 @@ cekHariKerja("minggu") // Memanggil variabel cekHariKerja yang berisi parameter 
     // Menggunakan method lanjutan dari Promise then
     console.log(result); // Perintah menampilkan hasil dari result
   })
-  .catch((error) => {
+  .catch((err) => {
     // Menggunakan method lanjutan dari Promise catch
-    console.log(error); // Perintah menampilkan hasil dari error
+    console.log(err.message); // Perintah menampilkan hasil dari error
   });
 // b. try catch
 const cekHari = async (day) => {
@@ -30,9 +30,9 @@ const cekHari = async (day) => {
   try {
     const result = await cekHariKerja(day); // Membuat variabel result yang didalamnya cek hari kerja index day serta menghentikan eksekusi fungsi asynchronous
     console.log(result); // Perintah menampilkan hasil dari result
-  } catch (error) {
+  } catch (err) {
     // Menggunakan method lanjutan dari Promise catch
-    console.log(error); // Perintah menampilkan hasil dari error
+    console.log(err.message); // Perintah menampilkan hasil dari error
   }
 };
 
